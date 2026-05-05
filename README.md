@@ -1,0 +1,137 @@
+# Bank Logo Bank
+
+Collection of bank and e-wallet logos (`.webp` format) hosted on GitHub Pages.
+
+**Live site:** https://minjaedevs.github.io/data_logo_bank/
+
+## Usage
+
+Each logo can be accessed directly via:
+
+```
+https://minjaedevs.github.io/data_logo_bank/bank/img_<id>.webp
+```
+
+### Logo IDs
+
+| ID               | Name                     |
+|------------------|--------------------------|
+| abbank           | ABBank                   |
+| acb              | ACB                      |
+| agricultural_china | Agricultural Bank of China |
+| anz              | ANZ                      |
+| bangkok          | Bangkok Bank             |
+| bidc             | BIDC                     |
+| bidv             | BIDV                     |
+| bnp_paribas      | BNP Paribas              |
+| busan            | Busan Bank               |
+| bvb              | BVB                      |
+| cake_by_vpbank   | Cake by VPBank           |
+| cathay           | Cathay Bank              |
+| cbbank           | CB Bank                  |
+| ccb              | China Construction Bank  |
+| ccf              | CCF                      |
+| china            | Bank of China            |
+| chinatrust       | Chinatrust               |
+| chinese_ocbc     | OCBC (Chinese)           |
+| cimb             | CIMB Bank                |
+| citibank         | Citibank                 |
+| comercial        | Comercial Bank           |
+| commercial       | Commercial Bank          |
+| commonwealth     | Commonwealth Bank        |
+| communication    | Communication Bank       |
+| csxh             | CSXH                     |
+| dbs              | DBS Bank                 |
+| default          | Default                  |
+| deutsche          | Deutsche Bank            |
+| eib              | EIB                      |
+| esun             | ESUN Bank                |
+| gpb              | GPB                      |
+| hana             | Hana Bank                |
+| hdb              | HDBank                   |
+| hlb              | Hong Leong Bank          |
+| hsbc             | HSBC                     |
+| hua_nan          | Hua Nan Bank             |
+| ibk              | IBK                      |
+| icbc             | ICBC                     |
+| india            | Bank of India            |
+| ivb              | IVB                      |
+| kasikornbank     | Kasikorn Bank            |
+| klb              | KLB                      |
+| kookmin          | Kookmin Bank             |
+| liobank          | Liobank                  |
+| lpb              | LPB                      |
+| mafc             | MAFC                     |
+| malayan          | Malayan Banking          |
+| maybank          | Maybank                  |
+| mb               | MB Bank                  |
+| mbv              | MBV                      |
+| mcb              | MCB                      |
+| mega             | Mega Bank                |
+| mhb              | MHB                      |
+| mizuho           | Mizuho Bank              |
+| mobifone_money   | MobiFone Money           |
+| momo             | MoMo                     |
+| msb              | MSB                      |
+| namabank         | NamA Bank                |
+| nasb             | NASB                     |
+| natixis          | Natixis                  |
+| ncb              | NCB                      |
+| nong_huyp        | NongHyup                 |
+| ocb              | OCB                      |
+| ojb              | OJB                      |
+| payoo            | Payoo                    |
+| pgb              | PGB                      |
+| pvc              | PVC Bank                 |
+| scb              | SCB                      |
+| seab             | SEAB                     |
+| sgb              | SGB                      |
+| shanghai         | Shanghai Bank            |
+| shb              | SHB                      |
+| shbvn            | SHB VN                   |
+| siam             | Siam Commercial Bank    |
+| sinopac          | Sinopac                  |
+| smbc             | SMBC                     |
+| standard_chartered | Standard Chartered      |
+| stb              | STB - Sacombank          |
+| taipei           | Taipei Fubon Bank        |
+| tcb              | TCB                      |
+| timo             | Timo                     |
+| tnex             | TNEX                     |
+| tokyomitsubishi  | Tokyo Mitsubishi         |
+| tpb              | TPBank                   |
+| umee             | UMEE                     |
+| uob              | UOB                      |
+| u_bank           | U Bank                   |
+| vab              | VAB                      |
+| vba              | VBA                      |
+| vcb              | VietComBank              |
+| vcbneo           | VCB Neo                  |
+| vccb             | VCCB                     |
+| vdb              | VDB                      |
+| vib              | VIB                      |
+| vid              | VID                      |
+| vietbank         | VietBank                 |
+| vietinbank       | VietinBank               |
+| vietqr_napas     | VietQR Napas             |
+| viettelpay       | ViettelPay               |
+| viettel_money    | Viettel Money            |
+| vikki            | Vikki                    |
+| vnpt_money       | VNPT Money               |
+| vpb              | VPBank                   |
+| vrb              | VRB                      |
+| woori            | Woori Bank               |
+| zalopay          | ZaloPay                  |
+
+## Quick Start (Add New Logo)
+
+1. Place the new `.webp` image in the `bank/` folder.
+2. Name it using the pattern: `img_<id>.webp`.
+3. Add the entry to the `logos` array in `index.html`.
+4. Push to GitHub — GitHub Pages will update automatically.
+
+## Tech Stack
+
+- Pure HTML + CSS + JavaScript (no build step)
+- GitHub Pages for hosting
+- WebP format for optimized file sizes
