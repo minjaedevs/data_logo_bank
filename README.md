@@ -1,6 +1,6 @@
 # Bank Logo Bank
 
-Collection of bank and e-wallet logos (`.webp` format) hosted on GitHub Pages.
+Collection of bank and e-wallet logos (`.webp` format) and frame images (`.png` format) hosted on GitHub Pages.
 
 **Live site:** https://minjaedevs.github.io/data_logo_bank/
 
@@ -129,6 +129,48 @@ https://minjaedevs.github.io/data_logo_bank/bank/img_<id>.webp
 2. Name it using the pattern: `img_<id>.webp`.
 3. Add the entry to the `logos` array in `index.html`.
 4. Push to GitHub — GitHub Pages will update automatically.
+
+## Frame Images
+
+Each frame image can be accessed directly via:
+
+```
+https://minjaedevs.github.io/data_logo_bank/frame/<id>.png
+```
+
+### Frame Types
+
+| Type | Prefix | Description |
+|------|--------|-------------|
+| **Background** | `bg_` | Background images for levels |
+| **Level Frame** | `lv_` | Level badge frames |
+| **Separator** | `tach_` | Separator between sections |
+
+### Frame IDs
+
+#### Background (bg_)
+
+| ID | Name |
+|----|------|
+| bg_lv1 ~ bg_lv5 | Background Level 1-5 |
+| bg_blv | Background BLV |
+| bg_cskh | Background CSKH |
+
+#### Level Frame (lv_)
+
+| ID | Name |
+|----|------|
+| lv1 ~ lv5 | Level 1-5 Frame |
+| lv_blv | BLV Frame |
+| lv_cskh | CSKH Frame |
+
+#### Separator (tach_)
+
+| ID | Name |
+|----|------|
+| tach1 ~ tach5 | Separator 1-5 |
+| tach_blv | BLV Separator |
+| tach_cskh | CSKH Separator |
 
 ## Tech Stack
 

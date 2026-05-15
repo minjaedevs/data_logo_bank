@@ -241,6 +241,7 @@
             <p class="subtitle">Danh sách logo ngân hàng & ví điện tử - Tổng hợp bởi minjaedevs</p>
             <div class="stats">
                 <div class="stat-item"><span id="totalCount">0</span> logos</div>
+                <div class="stat-item"><span id="frameCount">0</span> frames</div>
                 <div class="stat-item">GitHub Pages</div>
             </div>
         </header>
@@ -249,6 +250,10 @@
             <input type="text" id="searchInput" placeholder="Tìm kiếm ngân hàng...">
         </div>
 
+        <h2 style="font-size: 1.5rem; color: #94a3b8; margin: 1rem 0 0.5rem;">Frame Images</h2>
+        <div class="grid" id="frameGrid"></div>
+
+        <h2 style="font-size: 1.5rem; color: #94a3b8; margin: 2rem 0 0.5rem;">Bank Logos</h2>
         <div class="grid" id="logoGrid"></div>
 
         <div class="footer">
@@ -260,6 +265,30 @@
     <div class="toast" id="toast">Link đã được copy!</div>
 
     <script>
+        const frames = [
+            { id: 'bg_lv1',      name: 'Background Level 1',   type: 'bg' },
+            { id: 'bg_lv2',      name: 'Background Level 2',   type: 'bg' },
+            { id: 'bg_lv3',      name: 'Background Level 3',   type: 'bg' },
+            { id: 'bg_lv4',      name: 'Background Level 4',   type: 'bg' },
+            { id: 'bg_lv5',      name: 'Background Level 5',   type: 'bg' },
+            { id: 'bg_blv',      name: 'Background BLV',        type: 'bg' },
+            { id: 'bg_cskh',     name: 'Background CSKH',      type: 'bg' },
+            { id: 'lv1',         name: 'Level 1 Frame',         type: 'lv' },
+            { id: 'lv2',         name: 'Level 2 Frame',         type: 'lv' },
+            { id: 'lv3',         name: 'Level 3 Frame',         type: 'lv' },
+            { id: 'lv4',         name: 'Level 4 Frame',         type: 'lv' },
+            { id: 'lv5',         name: 'Level 5 Frame',         type: 'lv' },
+            { id: 'lv_blv',      name: 'BLV Frame',              type: 'lv' },
+            { id: 'lv_cskh',     name: 'CSKH Frame',             type: 'lv' },
+            { id: 'tach1',       name: 'Separator 1',            type: 'tach' },
+            { id: 'tach2',       name: 'Separator 2',            type: 'tach' },
+            { id: 'tach3',       name: 'Separator 3',            type: 'tach' },
+            { id: 'tach4',       name: 'Separator 4',            type: 'tach' },
+            { id: 'tach5',       name: 'Separator 5',            type: 'tach' },
+            { id: 'tach_blv',    name: 'BLV Separator',          type: 'tach' },
+            { id: 'tach_cskh',   name: 'CSKH Separator',         type: 'tach' },
+        ];
+
         const logos = [
             { id: 'abbank',      name: 'ABBank' },
             { id: 'acb',         name: 'ACB' },
@@ -370,13 +399,19 @@
         ];
 
         const repoBase = 'https://minjaedevs.github.io/data_logo_bank/bank/';
+        const frameBase = 'https://minjaedevs.github.io/data_logo_bank/frame/';
         const grid = document.getElementById('logoGrid');
+        const frameGrid = document.getElementById('frameGrid');
         const searchInput = document.getElementById('searchInput');
         const totalCount = document.getElementById('totalCount');
         const toast = document.getElementById('toast');
 
         function getLogoUrl(id) {
             return repoBase + 'img_' + id + '.webp';
+        }
+
+        function getFrameUrl(id) {
+            return frameBase + id + '.png';
         }
 
         function showToast(message) {
@@ -393,7 +428,9 @@
             });
         }
 
-        function renderCards(data) {
+        const frameTypeLabels = { bg: 'Background', lv: 'Level Frame', tach: 'Separator' };
+
+        function renderLogoCards(data) {
             grid.innerHTML = '';
             totalCount.textContent = data.length;
 
@@ -449,20 +486,72 @@
             });
         }
 
+        function renderFrameCards() {
+            frameGrid.innerHTML = '';
+            document.getElementById('frameCount').textContent = frames.length;
+
+            frames.forEach(item => {
+                const url = getFrameUrl(item.id);
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = item.name;
+                img.loading = 'lazy';
+
+                const name = document.createElement('div');
+                name.className = 'card-name';
+                name.textContent = item.name;
+
+                const idBadge = document.createElement('div');
+                idBadge.className = 'card-id';
+                idBadge.textContent = item.type + ' • ' + item.id;
+
+                const actions = document.createElement('div');
+                actions.className = 'card-actions';
+
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'btn btn-copy';
+                copyBtn.textContent = 'Copy Link';
+                copyBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    copyLink(url);
+                };
+
+                const viewBtn = document.createElement('a');
+                viewBtn.className = 'btn btn-view';
+                viewBtn.textContent = 'View';
+                viewBtn.href = url;
+                viewBtn.target = '_blank';
+
+                actions.appendChild(copyBtn);
+                actions.appendChild(viewBtn);
+
+                card.appendChild(img);
+                card.appendChild(name);
+                card.appendChild(idBadge);
+                card.appendChild(actions);
+
+                frameGrid.appendChild(card);
+            });
+        }
+
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
             if (!query) {
-                renderCards(logos);
+                renderLogoCards(logos);
                 return;
             }
             const filtered = logos.filter(item =>
                 item.id.toLowerCase().includes(query) ||
                 item.name.toLowerCase().includes(query)
             );
-            renderCards(filtered);
+            renderLogoCards(filtered);
         });
 
-        renderCards(logos);
+        renderLogoCards(logos);
+        renderFrameCards();
     </script>
 </body>
 </html>
