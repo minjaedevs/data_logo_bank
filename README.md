@@ -1,6 +1,6 @@
-# Bank Logo Bank
+# Bank Logo Bank & CKTV
 
-Collection of bank and e-wallet logos (`.webp` format) and frame images (`.png` format) hosted on GitHub Pages.
+Collection of bank/e-wallet logos (`.webp` format), frame images (`.png` format), and CKTV logos hosted on GitHub Pages.
 
 **Live site:** https://minjaedevs.github.io/data_logo_bank/
 
@@ -171,6 +171,25 @@ https://minjaedevs.github.io/data_logo_bank/frame/<id>.png
 | tach1 ~ tach5 | Separator 1-5 |
 | tach_blv | BLV Separator |
 | tach_cskh | CSKH Separator |
+
+## CKTV Logos
+
+Each CKTV logo can be accessed directly via:
+
+```
+https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
+```
+
+### CKTV Logo IDs
+
+| ID | Name | Format |
+|----|------|--------|
+| logo.png | CKTV Logo | PNG |
+| logo.webp | CKTV Logo | WebP |
+| logo-no_bg.png | CKTV Logo (No Background) | PNG |
+| logoOk9.png | CKTV Logo Ok9 | PNG |
+| logo_ok9.webp | CKTV Logo Ok9 | WebP |
+| logo_okvip_white.webp | CKTV Logo OkVip White | WebP |
 
 ## Tech Stack
 
