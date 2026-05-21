@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git remote get-url:*)"
+      "Bash(git remote get-url:*)",
+      "Bash(git -C d:/sports_data/data_logo_bank remote -v)"
     ]
   }
 }

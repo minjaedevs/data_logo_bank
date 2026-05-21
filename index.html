@@ -243,6 +243,7 @@
                 <div class="stat-item"><span id="totalCount">0</span> logos</div>
                 <div class="stat-item"><span id="frameCount">0</span> frames</div>
                 <div class="stat-item"><span id="cktvCount">0</span> cktv</div>
+                <div class="stat-item"><span id="lstvCount">0</span> lstv</div>
                 <div class="stat-item">GitHub Pages</div>
             </div>
         </header>
@@ -256,6 +257,9 @@
 
         <h2 style="font-size: 1.5rem; color: #94a3b8; margin: 2rem 0 0.5rem;">CKTV Logos</h2>
         <div class="grid" id="cktvGrid"></div>
+
+        <h2 style="font-size: 1.5rem; color: #94a3b8; margin: 2rem 0 0.5rem;">LSTV Logos</h2>
+        <div class="grid" id="lstvGrid"></div>
 
         <h2 style="font-size: 1.5rem; color: #94a3b8; margin: 2rem 0 0.5rem;">Bank Logos</h2>
         <div class="grid" id="logoGrid"></div>
@@ -405,9 +409,11 @@
         const repoBase = 'https://minjaedevs.github.io/data_logo_bank/bank/';
         const frameBase = 'https://minjaedevs.github.io/data_logo_bank/frame/';
         const cktvBase = 'https://minjaedevs.github.io/data_logo_bank/cktv/';
+        const lstvBase = 'https://minjaedevs.github.io/data_logo_bank/lstv/';
         const grid = document.getElementById('logoGrid');
         const frameGrid = document.getElementById('frameGrid');
         const cktvGrid = document.getElementById('cktvGrid');
+        const lstvGrid = document.getElementById('lstvGrid');
         const searchInput = document.getElementById('searchInput');
         const totalCount = document.getElementById('totalCount');
         const cktvCount = document.getElementById('cktvCount');
@@ -422,8 +428,25 @@
             { id: 'logo_okvip_white', name: 'CKTV Logo OkVip White', ext: 'webp' },
         ];
 
+        const lstvLogos = [
+            { id: 'ic_logo',                    name: 'LSTV IC Logo',                ext: 'png' },
+            { id: 'icon_header',                name: 'LSTV Icon Header',            ext: 'png' },
+            { id: 'image',                      name: 'LSTV Image',                  ext: 'png' },
+            { id: 'logo',                       name: 'LSTV Logo',                   ext: 'png' },
+            { id: 'LOGO_LUONGSON_TV',           name: 'Logo Luong Son TV',           ext: 'png' },
+            { id: 'logoOK9',                    name: 'LSTV Logo OK9',               ext: 'png' },
+            { id: 'logoOK9_button',             name: 'LSTV Logo OK9 Button',        ext: 'png' },
+            { id: 'logoOK9_slogan_CoJMlC75',   name: 'LSTV Logo OK9 Slogan',        ext: 'png' },
+            { id: 'ok9',                        name: 'LSTV OK9',                    ext: 'png' },
+            { id: 'ok9aa',                      name: 'LSTV OK9 AA',                 ext: 'png' },
+        ];
+
         function getCktvUrl(id, ext) {
             return cktvBase + id + '.' + ext;
+        }
+
+        function getLstvUrl(id, ext) {
+            return lstvBase + id + '.' + ext;
         }
 
         function getLogoUrl(id) {
@@ -608,6 +631,57 @@
             });
         }
 
+        function renderLstvCards() {
+            lstvGrid.innerHTML = '';
+            document.getElementById('lstvCount').textContent = lstvLogos.length;
+
+            lstvLogos.forEach(item => {
+                const url = getLstvUrl(item.id, item.ext);
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = item.name;
+                img.loading = 'lazy';
+
+                const name = document.createElement('div');
+                name.className = 'card-name';
+                name.textContent = item.name;
+
+                const idBadge = document.createElement('div');
+                idBadge.className = 'card-id';
+                idBadge.textContent = item.id + '.' + item.ext;
+
+                const actions = document.createElement('div');
+                actions.className = 'card-actions';
+
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'btn btn-copy';
+                copyBtn.textContent = 'Copy Link';
+                copyBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    copyLink(url);
+                };
+
+                const viewBtn = document.createElement('a');
+                viewBtn.className = 'btn btn-view';
+                viewBtn.textContent = 'View';
+                viewBtn.href = url;
+                viewBtn.target = '_blank';
+
+                actions.appendChild(copyBtn);
+                actions.appendChild(viewBtn);
+
+                card.appendChild(img);
+                card.appendChild(name);
+                card.appendChild(idBadge);
+                card.appendChild(actions);
+
+                lstvGrid.appendChild(card);
+            });
+        }
+
         searchInput.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
             if (!query) {
@@ -624,6 +698,7 @@
         renderLogoCards(logos);
         renderFrameCards();
         renderCktvCards();
+        renderLstvCards();
     </script>
 </body>
 </html>

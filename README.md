@@ -191,6 +191,29 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 | logo_ok9.webp | CKTV Logo Ok9 | WebP |
 | logo_okvip_white.webp | CKTV Logo OkVip White | WebP |
 
+## LSTV Logos
+
+Each LSTV logo can be accessed directly via:
+
+```
+https://minjaedevs.github.io/data_logo_bank/lstv/<filename>
+```
+
+### LSTV Logo Files
+
+| Filename | Name |
+|----------|------|
+| ic_logo.png | LSTV IC Logo |
+| icon_header.png | LSTV Icon Header |
+| image.png | LSTV Image |
+| logo.png | LSTV Logo |
+| LOGO_LUONGSON_TV.png | Logo Luong Son TV |
+| logoOK9.png | LSTV Logo OK9 |
+| logoOK9_button.png | LSTV Logo OK9 Button |
+| logoOK9_slogan_CoJMlC75.png | LSTV Logo OK9 Slogan |
+| ok9.png | LSTV OK9 |
+| ok9aa.png | LSTV OK9 AA |
+
 ## Tech Stack
 
 - Pure HTML + CSS + JavaScript (no build step)
