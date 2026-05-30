@@ -203,6 +203,8 @@ https://minjaedevs.github.io/data_logo_bank/lstv/<filename>
 
 | Filename | Name |
 |----------|------|
+| g1.gif | LSTV G1 |
+| g2.gif | LSTV G2 |
 | ic_logo.png | LSTV IC Logo |
 | icon_header.png | LSTV Icon Header |
 | image.png | LSTV Image |
