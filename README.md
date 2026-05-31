@@ -184,12 +184,24 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 
 | ID | Name | Format |
 |----|------|--------|
+| intro_1.jpg | CKTV Intro 1 | JPEG |
+| intro_3.jpg | CKTV Intro 3 | JPEG |
+| intro_4.jpg | CKTV Intro 4 | JPEG |
+| intro_5.jpg | CKTV Intro 5 | JPEG |
+| intro_6.jpg | CKTV Intro 6 | JPEG |
+| bg_wc_new1.png | CKTV World Cup Background New 1 | PNG |
 | logo.png | CKTV Logo | PNG |
 | logo.webp | CKTV Logo | WebP |
 | logo-no_bg.png | CKTV Logo (No Background) | PNG |
 | logoOk9.png | CKTV Logo Ok9 | PNG |
 | logo_ok9.webp | CKTV Logo Ok9 | WebP |
 | logo_okvip_white.webp | CKTV Logo OkVip White | WebP |
+| schedule_wc_b1.png | CKTV World Cup Schedule B1 | PNG |
+| schedule_wc_b2.png | CKTV World Cup Schedule B2 | PNG |
+| schedule_wc_b3.png | CKTV World Cup Schedule B3 | PNG |
+| schedule_wc_final.png | CKTV World Cup Schedule Final | PNG |
+| schedule_wc_new.png | CKTV World Cup Schedule New | PNG |
+| schedule_wc_new1.png | CKTV World Cup Schedule New 1 | PNG |
 
 ## LSTV Logos
 
