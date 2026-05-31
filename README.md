@@ -202,6 +202,7 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 | schedule_wc_final.png | CKTV World Cup Schedule Final | PNG |
 | schedule_wc_new.png | CKTV World Cup Schedule New | PNG |
 | schedule_wc_new1.png | CKTV World Cup Schedule New 1 | PNG |
+| schedue_tournament_table_wc.png | CKTV World Cup Tournament Table | PNG |
 
 ## LSTV Logos
 
