@@ -189,7 +189,12 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 | intro_4.jpg | CKTV Intro 4 | JPEG |
 | intro_5.jpg | CKTV Intro 5 | JPEG |
 | intro_6.jpg | CKTV Intro 6 | JPEG |
+| bg_du_doan_ti_so.png | CKTV Prediction Score Background | PNG |
+| bg_name_team.png | CKTV Team Name Background | PNG |
 | bg_wc_new1.png | CKTV World Cup Background New 1 | PNG |
+| frame_when_opening_gifts_dark.png | CKTV Opening Gifts Frame Dark | PNG |
+| frame_when_opening_gifts_light.png | CKTV Opening Gifts Frame Light | PNG |
+| ic_tele.png | CKTV Telegram Icon | PNG |
 | logo.png | CKTV Logo | PNG |
 | logo.webp | CKTV Logo | WebP |
 | logo-no_bg.png | CKTV Logo (No Background) | PNG |
@@ -203,6 +208,7 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 | schedule_wc_new.png | CKTV World Cup Schedule New | PNG |
 | schedule_wc_new1.png | CKTV World Cup Schedule New 1 | PNG |
 | schedue_tournament_table_wc.png | CKTV World Cup Tournament Table | PNG |
+| text_du_doan_ti_so.png | CKTV Prediction Score Text | PNG |
 
 ## LSTV Logos
 
