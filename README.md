@@ -180,37 +180,42 @@ Each CKTV logo can be accessed directly via:
 https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 ```
 
-### CKTV Logo IDs
+### CKTV Logo Files
 
-| ID | Name | Format |
-|----|------|--------|
-| intro_1.jpg | CKTV Intro 1 | JPEG |
-| intro_3.jpg | CKTV Intro 3 | JPEG |
-| intro_4.jpg | CKTV Intro 4 | JPEG |
-| intro_5.jpg | CKTV Intro 5 | JPEG |
-| intro_6.jpg | CKTV Intro 6 | JPEG |
-| bg_du_doan_ti_so.png | CKTV Prediction Score Background | PNG |
-| bg_name_team.png | CKTV Team Name Background | PNG |
-| bg_wc_new1.png | CKTV World Cup Background New 1 | PNG |
-| frame_when_opening_gifts_dark.png | CKTV Opening Gifts Frame Dark | PNG |
-| frame_when_opening_gifts_light.png | CKTV Opening Gifts Frame Light | PNG |
-| glyph.png | CKTV Glyph | PNG |
-| ic_tab_wc.png | CKTV World Cup Tab Icon | PNG |
-| ic_tele.png | CKTV Telegram Icon | PNG |
-| logo.png | CKTV Logo | PNG |
-| logo.webp | CKTV Logo | WebP |
-| logo-no_bg.png | CKTV Logo (No Background) | PNG |
-| logoOk9.png | CKTV Logo Ok9 | PNG |
-| logo_ok9.webp | CKTV Logo Ok9 | WebP |
-| logo_okvip_white.webp | CKTV Logo OkVip White | WebP |
-| schedule_wc_b1.png | CKTV World Cup Schedule B1 | PNG |
-| schedule_wc_b2.png | CKTV World Cup Schedule B2 | PNG |
-| schedule_wc_b3.png | CKTV World Cup Schedule B3 | PNG |
-| schedule_wc_final.png | CKTV World Cup Schedule Final | PNG |
-| schedule_wc_new.png | CKTV World Cup Schedule New | PNG |
-| schedule_wc_new1.png | CKTV World Cup Schedule New 1 | PNG |
-| schedue_tournament_table_wc.png | CKTV World Cup Tournament Table | PNG |
-| text_du_doan_ti_so.png | CKTV Prediction Score Text | PNG |
+| Filename | Name | Publish Link |
+|----------|------|--------------|
+| intro_1.jpg | CKTV Intro 1 | https://minjaedevs.github.io/data_logo_bank/cktv/intro_1.jpg |
+| intro_3.jpg | CKTV Intro 3 | https://minjaedevs.github.io/data_logo_bank/cktv/intro_3.jpg |
+| intro_4.jpg | CKTV Intro 4 | https://minjaedevs.github.io/data_logo_bank/cktv/intro_4.jpg |
+| intro_5.jpg | CKTV Intro 5 | https://minjaedevs.github.io/data_logo_bank/cktv/intro_5.jpg |
+| intro_6.jpg | CKTV Intro 6 | https://minjaedevs.github.io/data_logo_bank/cktv/intro_6.jpg |
+| bg_coutdown.png | CKTV Countdown Background | https://minjaedevs.github.io/data_logo_bank/cktv/bg_coutdown.png |
+| bg_du_doan_ti_so.png | CKTV Prediction Score Background | https://minjaedevs.github.io/data_logo_bank/cktv/bg_du_doan_ti_so.png |
+| bg_name_team.png | CKTV Team Name Background | https://minjaedevs.github.io/data_logo_bank/cktv/bg_name_team.png |
+| bg_title_wc.webp | CKTV World Cup Title Background | https://minjaedevs.github.io/data_logo_bank/cktv/bg_title_wc.webp |
+| bg_wc_new1.png | CKTV World Cup Background New 1 | https://minjaedevs.github.io/data_logo_bank/cktv/bg_wc_new1.png |
+| flag_canada.png | CKTV Canada Flag | https://minjaedevs.github.io/data_logo_bank/cktv/flag_canada.png |
+| flag_mexico.png | CKTV Mexico Flag | https://minjaedevs.github.io/data_logo_bank/cktv/flag_mexico.png |
+| flag_us.png | CKTV US Flag | https://minjaedevs.github.io/data_logo_bank/cktv/flag_us.png |
+| frame_when_opening_gifts_dark.png | CKTV Opening Gifts Frame Dark | https://minjaedevs.github.io/data_logo_bank/cktv/frame_when_opening_gifts_dark.png |
+| frame_when_opening_gifts_light.png | CKTV Opening Gifts Frame Light | https://minjaedevs.github.io/data_logo_bank/cktv/frame_when_opening_gifts_light.png |
+| glyph.png | CKTV Glyph | https://minjaedevs.github.io/data_logo_bank/cktv/glyph.png |
+| ic_tab_wc.png | CKTV World Cup Tab Icon | https://minjaedevs.github.io/data_logo_bank/cktv/ic_tab_wc.png |
+| ic_tele.png | CKTV Telegram Icon | https://minjaedevs.github.io/data_logo_bank/cktv/ic_tele.png |
+| logo.png | CKTV Logo | https://minjaedevs.github.io/data_logo_bank/cktv/logo.png |
+| logo.webp | CKTV Logo | https://minjaedevs.github.io/data_logo_bank/cktv/logo.webp |
+| logo-no_bg.png | CKTV Logo (No Background) | https://minjaedevs.github.io/data_logo_bank/cktv/logo-no_bg.png |
+| logoOk9.png | CKTV Logo Ok9 | https://minjaedevs.github.io/data_logo_bank/cktv/logoOk9.png |
+| logo_ok9.webp | CKTV Logo Ok9 | https://minjaedevs.github.io/data_logo_bank/cktv/logo_ok9.webp |
+| logo_okvip_white.webp | CKTV Logo OkVip White | https://minjaedevs.github.io/data_logo_bank/cktv/logo_okvip_white.webp |
+| schedule_wc_b1.png | CKTV World Cup Schedule B1 | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_b1.png |
+| schedule_wc_b2.png | CKTV World Cup Schedule B2 | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_b2.png |
+| schedule_wc_b3.png | CKTV World Cup Schedule B3 | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_b3.png |
+| schedule_wc_final.png | CKTV World Cup Schedule Final | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_final.png |
+| schedule_wc_new.png | CKTV World Cup Schedule New | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_new.png |
+| schedule_wc_new1.png | CKTV World Cup Schedule New 1 | https://minjaedevs.github.io/data_logo_bank/cktv/schedule_wc_new1.png |
+| schedue_tournament_table_wc.png | CKTV World Cup Tournament Table | https://minjaedevs.github.io/data_logo_bank/cktv/schedue_tournament_table_wc.png |
+| text_du_doan_ti_so.png | CKTV Prediction Score Text | https://minjaedevs.github.io/data_logo_bank/cktv/text_du_doan_ti_so.png |
 
 ## LSTV Logos
 
