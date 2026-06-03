@@ -195,6 +195,7 @@ https://minjaedevs.github.io/data_logo_bank/cktv/<id>.<ext>
 | frame_when_opening_gifts_dark.png | CKTV Opening Gifts Frame Dark | PNG |
 | frame_when_opening_gifts_light.png | CKTV Opening Gifts Frame Light | PNG |
 | glyph.png | CKTV Glyph | PNG |
+| ic_tab_wc.png | CKTV World Cup Tab Icon | PNG |
 | ic_tele.png | CKTV Telegram Icon | PNG |
 | logo.png | CKTV Logo | PNG |
 | logo.webp | CKTV Logo | WebP |
