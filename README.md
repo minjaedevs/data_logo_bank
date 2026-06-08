@@ -240,6 +240,8 @@ https://minjaedevs.github.io/data_logo_bank/lstv/<filename>
 | logoOK9.png | LSTV Logo OK9 |
 | logoOK9_button.png | LSTV Logo OK9 Button |
 | logoOK9_slogan_CoJMlC75.png | LSTV Logo OK9 Slogan |
+| match_frame_hot.png | LSTV Match Frame Hot |
+| match_title_hot.png | LSTV Match Title Hot |
 | ok9.png | LSTV OK9 |
 | ok9aa.png | LSTV OK9 AA |
 
