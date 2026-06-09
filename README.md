@@ -229,6 +229,7 @@ https://minjaedevs.github.io/data_logo_bank/lstv/<filename>
 
 | Filename | Name |
 |----------|------|
+| cup.svg | LSTV Cup |
 | default_logo_wc.png | LSTV Default Logo WC |
 | g1.gif | LSTV G1 |
 | g2.gif | LSTV G2 |
